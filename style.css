@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    max-width: 1280px !important;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+button{
+    padding: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 15%; 
+    transition: left 0.3s ease; 
+    padding-top: 25px;
+    gap: 30px;
+    padding-left: 15px;
+}
+
+.sidebar_product{
+    height: 100vh;
+}
+
+.sidebar_toggle {
+    position: absolute;
+    top: 20px; 
+    left: -265px; 
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff; 
+    z-index: 999; 
+}
+    
+.cards{
+    margin-top:-600px;
+    width: 1000px;
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    row-gap: 20px;
+}

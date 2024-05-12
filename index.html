@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MAIN CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+    <!--  BOX ICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body class="bg-[#0C0C17]">
+    <!-- SIDEBAR SECTION -->
+   
+    <header class="bg-[#0F172A]">
+        <div class="container">
+            <ul class="flex  items-center  justify-center gap-[100px] p-[10px]">
+                <a href=""><img src="./assets/images/download.png" class="w-[50px] rounded-[50%]" alt=""></a>
+                <li><a href="" class="text-base font-semibold text-white font-serif hover:border-b hover:border-[yellow]">ABOUT</a></li>
+                <li><a href="" class="text-base font-semibold text-white font-serif hover:border-b hover:border-[yellow]">MAIN</a></li>
+                <li><a href="" class="text-base font-semibold text-white font-serif hover:border-b hover:border-[yellow]">SERVICES</a></li>
+                <li><a href="" class="text-base font-semibold text-white font-serif hover:border-b hover:border-[yellow]">CALL CENTRE</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="header flex">
+        <div class="sidebar w3-bar-block bg-[#0F172A]" id="sidebar" >
+            <button id="biletlar"><a href="#" class="w3-bar-item w3-button text-base font-medium font-serif text-[white]">BILETLAR</a></button>
+            <button id="product"><a href="#" class="w3-bar-item w3-button text-base font-medium font-serif text-[white]">PRODUCTLAR</a></button>
+
+        </div>
+        <span class="relative top-[-55px] left-[-55px]" id="span"><button class="rounded-[5px]" id="btn"><box-icon name='menu' size="40px" color="white"></box-icon></button></span>
+        <h1 class="text-[white] flex items-center justify-center  ml-[300px] gap-[25px] text-[36px] font-serif font-bold" id="head"> <img src="./assets/images/download.png" alt="" class="rounded-[50%]">UZBEKISTAN AIRWAYS</h1>
+    </div>
+    <div class="cardlar hidden" id="cardlar">
+            <div class="cards" id="cards">
+                
+            </div>
+    </div>
+
+    <div class="biletlar  flex-col items-center justify-center ml-[150px] mt-[-600px] hidden " id="sotibol">
+    <h1 class="text-white text-center text-[35px] pb-[25px] flex items-center gap-[8px]"> WECOME TO UZBEKISTAN AIRWAYS <box-icon type='solid' color="white" size="45px" name='plane-alt'></box-icon></h1>
+     <form action="" onsubmit="Submit(event)">
+            <div class="inputlar flex items-center gap-[150px] bg-[white] w-[1050px] p-[15px] h-[200px] rounded-t-xl">
+            <div class="inp1  flex items-center gap-[5px] w-full border border-[#01C3A7] rounded-[4px]">
+                <span><box-icon name='map-pin' size="42px" color="#01C3A7"></box-icon></span>
+                <input type="text" placeholder="QAYERDAN" id="qayerdan" class="w-full outline-none h-full">
+            </div>
+            <div class="inp2 flex items-center gap-[5px] w-full border border-[#01C3A7] rounded-[4px]">
+                <span><box-icon name='map-pin' type="solid" size="42px" color="#01C3A7"></box-icon></span>
+                <input type="text" placeholder="QAYERGA" id="qayerga" class="w-full outline-none h-full">
+            </div>
+            <div class="inp3 flex items-center gap-[5px] w-full border border-[#01C3A7] rounded-[4px]">
+                <span><box-icon name='calendar-check'  size="42px" color="#01C3A7"></box-icon></span>
+                <input type="date" id="data" class="text-[#01C3A7] w-full outline-none h-full">
+            </div> 
+            
+        </div>
+        <button type="submit" id="avisub"  class="flex justify-center items-center rounded-b-xl  p-[15px] bg-[white] w-full"><span class="p-[15px] bg-[#01C3A7] rounded-[4px]">SUBMIT</span></button>
+    </form> 
+        <div class="locatsiyalar flex items-center gap-[15px] p-[10px] rounded-[8px] bg-[white]">
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>TURKIYA</span>
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>AMERIKA</span>
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>ANTALIYA</span>
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>RUSSIYA</span>
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>SHVETSARIYA</span>
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>XITOY</span>
+            <span class="flex items-center text-[#010000] font-medium font-serif gap-[7px]"><box-icon name='map-pin' size="28px" color="#01C3A7"></box-icon>SHARM EL-SHEYKX</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="aviachipta bg-[white] border-[2px] border-[black] rounded-lg ml-[150px] mt-[-200px] z-9999999 hidden" id="aviachipta">
+          
+        </div>
+    </div>
+   
+            
+</body>
+<!-- DATA BASE SRC -->
+<script src="./data.js"></script>
+<!-- MAIN JS SRC -->
+<script src="./index.js"></script>
+<!-- TAILWIND CSS SRC -->
+<script src="https://cdn.tailwindcss.com/"></script>
+<!--  BOX ICON SRC -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
